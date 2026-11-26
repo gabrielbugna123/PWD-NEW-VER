@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PWD Assist is a student project that gives information, an accessibility directory, assistance guides, and emergency contacts for Persons with Disabilities in the Philippines.">
+  <title>PWD Assist | Accessibility Assistance System</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <nav class="sidebar" aria-label="Main navigation">
+    <div class="brand">
+      <div class="brand-icon"><img src="images/logo.svg" alt="" class="brand-logo"></div>
+      <h1>PWD ASSIST</h1>
+      <p>Information and<br>accessibility assistance<br>system</p>
+    </div>
+
+    <div class="navigation">
+      <button class="nav-link active" data-page="home" aria-current="page"><img src="images/home.svg" alt="" class="nav-icon"> Home</button>
+      <button class="nav-link" data-page="information"><img src="images/info.svg" alt="" class="nav-icon"> PWD Information</button>
+      <button class="nav-link" data-page="directory"><img src="images/location.svg" alt="" class="nav-icon"> Accessibility Directory</button>
+      <button class="nav-link" data-page="guide"><img src="images/book.svg" alt="" class="nav-icon"> Assistance Guide</button>
+      <button class="nav-link" data-page="announcements"><img src="images/Notif.svg" alt="" class="nav-icon"> Announcement</button>
+      <button class="nav-link" data-page="contacts"><img src="images/phone.svg" alt="" class="nav-icon"> Emergency Contacts</button>
+    </div>
+
+    <div class="sidebar-footer">ACCESSIBILITY FOR EVERYONE</div>
+  </nav>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ==================== HOME PAGE ==================== -->
+    <div class="page active" id="home">
+      <div class="welcome-banner">
+        <div>
+          <p class="eyebrow">WELCOME TO</p>
+          <h2>PWD Assist!</h2>
+        </div>
+        <p class="welcome-copy">Your one stop platform for information,<br>accessibility resources, and support for<br>Persons with Disabilities.</p>
+        <div class="banner-symbol"><img src="images/logo.svg" alt="" class="banner-logo"></div>
+      </div>
+
+      <div class="feature-grid">
+        <button class="feature-card" data-go="information">
+          <span class="feature-icon"><img src="images/clipboard.svg" alt="" class="feature-img"></span>
+          <strong>PWD<br>Information</strong>
+          <small>Know your rights and benefits</small>
+        </button>
+        <button class="feature-card" data-go="directory">
+          <span class="feature-icon"><img src="images/location.svg" alt="" class="feature-img"></span>
+          <strong>Accessibility<br>Directory</strong>
+          <small>Find nearby helpful facilities</small>
+        </button>
+        <button class="feature-card" data-go="guide">
+          <span class="feature-icon"><img src="images/book.svg" alt="" class="feature-img"></span>
+          <strong>Assistance<br>Guide</strong>
+          <small>Learn how to get assistance</small>
+        </button>
+        <button class="feature-card" data-go="announcements">
+          <span class="feature-icon"><img src="images/Notif.svg" alt="" class="feature-img"></span>
+          <strong>Announcement</strong>
+          <small>Read the latest updates</small>
+        </button>
+      </div>
+
+      <div class="support-banner">
+        <div class="support-icon"><img src="images/phone.svg" alt="" class="support-img"></div>
+        <div>
+          <h2>Emergency Contacts</h2>
+          <p>Important hotlines you can call in an emergency.</p>
+        </div>
+        <button class="primary-button" data-go="contacts">View Hotlines →</button>
+      </div>
+
+      <p class="disclaimer">Student project prototype/Information should be verified with the government office.</p>
+    </div>
+
+    <!-- ==================== PWD INFORMATION PAGE ==================== -->
+    <div class="page" id="information">
+      <div class="page-banner">
+        <img src="images/clipboard.svg" alt="" class="page-banner-icon">
+        <div>
+          <p class="eyebrow">LEARN AND UNDERSTAND</p>
+          <h2>PWD Information</h2>
+        </div>
+      </div>
+
+      <div class="content-panel">
+        <h3>Information for Persons with Disabilities</h3>
+        <p class="intro">This section provides general information about the rights, services, and assistance available to Persons with Disabilities (PWDs) in the Philippines.</p>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <img src="images/scale.svg" alt="" class="info-icon">
+            <h3>PWD Rights</h3>
+            <p>Learn about equal opportunities, accessibility, and protection against discrimination.</p>
+          </div>
+          <div class="info-card">
+            <img src="images/card.svg" alt="" class="info-icon">
+            <h3>PWD ID</h3>
+            <p>A PWD identification card helps qualified individuals access applicable benefits and services.</p>
+          </div>
+          <div class="info-card">
+            <img src="images/hospital.svg" alt="" class="info-icon">
+            <h3>Health Services</h3>
+            <p>Ask authorized offices and healthcare providers about available medical assistance.</p>
+          </div>
+          <div class="info-card">
+            <img src="images/handshake.svg" alt="" class="info-icon">
+            <h3>Government Support</h3>
+            <p>Learn where to ask about programs and services offered by local government offices.</p>
+          </div>
+        </div>
+
+        <div class="notice"><strong>Reminder:</strong> Requirements and benefits may vary. Confirm current details with your local PDAO or the relevant government agency.</div>
+      </div>
+    </div>
+
+    <!-- ==================== ACCESSIBILITY DIRECTORY PAGE ==================== -->
+    <div class="page" id="directory">
+      <div class="search-wrap">
+        <label for="directorySearch" class="visually-hidden">Search the accessibility directory</label>
+        <input id="directorySearch" type="text" placeholder="Search hospitals, centers, or facilities..." autocomplete="off">
+        <img src="images/search.svg" alt="" class="search-icon">
+      </div>
+
+      <div class="page-banner directory-banner">
+        <img src="images/location.svg" alt="" class="page-banner-icon">
+        <div>
+          <p class="eyebrow">FIND ACCESSIBLE SERVICES</p>
+          <h2>Accessibility Directory</h2>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter-button selected" data-filter="All" aria-pressed="true">All</button>
+        <button class="filter-button" data-filter="Hospital" aria-pressed="false">Hospitals</button>
+        <button class="filter-button" data-filter="Center" aria-pressed="false">Centers</button>
+        <button class="filter-button" data-filter="PWD Facility" aria-pressed="false">PWD Facilities</button>
+      </div>
+
+      <p id="directoryStatus" class="visually-hidden" aria-live="polite"></p>
+
+      <div class="directory-list" id="directoryList">
+
+        <!-- ===== HOSPITALS — NCR ===== -->
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Philippine General Hospital</h3>
+            <p>Taft Avenue, Ermita, Manila</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Philippine+General+Hospital+Manila" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>National Orthopedic Hospital</h3>
+            <p>Banawe Street, Quezon City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Philippine+Orthopedic+Center+Quezon+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Philippine Heart Center</h3>
+            <p>East Avenue, Quezon City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Philippine+Heart+Center+Quezon+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>East Avenue Medical Center</h3>
+            <p>East Avenue, Quezon City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=East+Avenue+Medical+Center+Quezon+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Jose Reyes Memorial Medical Center</h3>
+            <p>Rizal Avenue, Sta. Cruz, Manila</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Jose+Reyes+Memorial+Medical+Center+Manila" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Veterans Memorial Medical Center</h3>
+            <p>North Avenue, Quezon City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Veterans+Memorial+Medical+Center+Quezon+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Rizal Medical Center</h3>
+            <p>Pasig Boulevard, Pasig City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Rizal+Medical+Center+Pasig+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Ospital ng Maynila Medical Center</h3>
+            <p>Quirino Avenue, Malate, Manila</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Ospital+ng+Maynila+Medical+Center" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <!-- ===== HOSPITALS — LUZON ===== -->
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Baguio General Hospital and Medical Center</h3>
+            <p>Governor Pack Road, Baguio City, Benguet</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Baguio+General+Hospital+and+Medical+Center" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Region 1 Medical Center</h3>
+            <p>Arellano Street, Dagupan City, Pangasinan</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Region+1+Medical+Center+Dagupan+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Batangas Medical Center</h3>
+            <p>Kumintang Ibaba, Batangas City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Batangas+Medical+Center" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Bicol Medical Center</h3>
+            <p>Concepcion Pequeña, Naga City, Camarines Sur</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Bicol+Medical+Center+Naga+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <!-- ===== HOSPITALS — VISAYAS ===== -->
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Vicente Sotto Memorial Medical Center</h3>
+            <p>B. Rodriguez Street, Cebu City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Vicente+Sotto+Memorial+Medical+Center+Cebu+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Western Visayas Medical Center</h3>
+            <p>Q. Abeto Street, Mandurriao, Iloilo City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Western+Visayas+Medical+Center+Iloilo+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Corazon Locsin Montelibano Memorial Regional Hospital</h3>
+            <p>Lacson Street, Bacolod City, Negros Occidental</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Corazon+Locsin+Montelibano+Memorial+Regional+Hospital+Bacolod" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <!-- ===== HOSPITALS — MINDANAO ===== -->
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Southern Philippines Medical Center</h3>
+            <p>J.P. Laurel Avenue, Davao City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Southern+Philippines+Medical+Center+Davao+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Northern Mindanao Medical Center</h3>
+            <p>Capitol Compound, Cagayan de Oro City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Northern+Mindanao+Medical+Center+Cagayan+de+Oro" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Cotabato Regional and Medical Center</h3>
+            <p>Sinsuat Avenue, Cotabato City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Cotabato+Regional+and+Medical+Center" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Hospital">
+          <div class="directory-icon"><img src="images/hospital.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">HOSPITAL</span>
+            <h3>Zamboanga City Medical Center</h3>
+            <p>Dr. Evangelista Street, Zamboanga City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Zamboanga+City+Medical+Center" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <!-- ===== CENTERS — Rehabilitation & Specialized ===== -->
+        <div class="directory-card" data-category="Center">
+          <div class="directory-icon"><img src="images/building.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">CENTER</span>
+            <h3>National Center for Mental Health</h3>
+            <p>Nueve de Pebrero Street, Mandaluyong City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=National+Center+for+Mental+Health+Mandaluyong" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Center">
+          <div class="directory-icon"><img src="images/building.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">CENTER</span>
+            <h3>National Kidney and Transplant Institute</h3>
+            <p>East Avenue, Quezon City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=National+Kidney+and+Transplant+Institute+Quezon+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Center">
+          <div class="directory-icon"><img src="images/building.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">CENTER</span>
+            <h3>Lung Center of the Philippines</h3>
+            <p>Quezon Avenue, Quezon City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Lung+Center+of+the+Philippines+Quezon+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Center">
+          <div class="directory-icon"><img src="images/building.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">CENTER</span>
+            <h3>Tahanang Walang Hagdanan (House Without Steps)</h3>
+            <p>Cainta, Rizal — Rehabilitation center for Persons with Disabilities</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tahanang+Walang+Hagdanan+Cainta+Rizal" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Center">
+          <div class="directory-icon"><img src="images/building.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">CENTER</span>
+            <h3>Resources for the Blind, Inc.</h3>
+            <p>Shaw Boulevard, Mandaluyong City — Support and services for the visually impaired</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Resources+for+the+Blind+Mandaluyong" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Center">
+          <div class="directory-icon"><img src="images/building.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">CENTER</span>
+            <h3>Elsie Gaches Village</h3>
+            <p>Alabang, Muntinlupa City — Residential care for children and adults with disabilities</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Elsie+Gaches+Village+Alabang+Muntinlupa" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Center">
+          <div class="directory-icon"><img src="images/building.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">CENTER</span>
+            <h3>Philippine National School for the Deaf</h3>
+            <p>Pasay City — Education and support for the deaf and hard of hearing</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Philippine+National+School+for+the+Deaf+Pasay" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="Center">
+          <div class="directory-icon"><img src="images/building.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">CENTER</span>
+            <h3>Philippine National School for the Blind</h3>
+            <p>Pasay City — Education and training for the visually impaired</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Philippine+National+School+for+the+Blind+Pasay" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <!-- ===== PWD FACILITIES — Government Offices ===== -->
+        <div class="directory-card" data-category="PWD Facility">
+          <div class="directory-icon"><img src="images/wheelchair.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">PWD FACILITY</span>
+            <h3>National Council on Disability Affairs (NCDA)</h3>
+            <p>NCDA Building, Vasra corner Howmart Road, Quezon City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=National+Council+on+Disability+Affairs+Quezon+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="PWD Facility">
+          <div class="directory-icon"><img src="images/wheelchair.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">PWD FACILITY</span>
+            <h3>DSWD Central Office</h3>
+            <p>Batasan Pambansa Complex, Constitution Hills, Quezon City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=DSWD+Central+Office+Quezon+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="PWD Facility">
+          <div class="directory-icon"><img src="images/wheelchair.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">PWD FACILITY</span>
+            <h3>PhilHealth Main Office</h3>
+            <p>Citystate Centre, Shaw Boulevard, Pasig City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=PhilHealth+Main+Office+Pasig+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="PWD Facility">
+          <div class="directory-icon"><img src="images/wheelchair.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">PWD FACILITY</span>
+            <h3>DSWD Field Office III — Central Luzon</h3>
+            <p>Diosdado Macapagal Government Center, Maimpis, City of San Fernando, Pampanga</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=DSWD+Field+Office+3+San+Fernando+Pampanga" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="PWD Facility">
+          <div class="directory-icon"><img src="images/wheelchair.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">PWD FACILITY</span>
+            <h3>DSWD Field Office IV-A — CALABARZON</h3>
+            <p>Alabang-Zapote Road, Alabang, Muntinlupa City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=DSWD+Field+Office+CALABARZON+Muntinlupa" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="PWD Facility">
+          <div class="directory-icon"><img src="images/wheelchair.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">PWD FACILITY</span>
+            <h3>DSWD Field Office VII — Central Visayas</h3>
+            <p>M.J. Cuenco Avenue, Cebu City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=DSWD+Field+Office+7+Cebu+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="PWD Facility">
+          <div class="directory-icon"><img src="images/wheelchair.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">PWD FACILITY</span>
+            <h3>DSWD Field Office XI — Davao Region</h3>
+            <p>DSWD Compound, Bangkal, Davao City</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=DSWD+Field+Office+11+Davao+City" target="_blank">View location ↗</a>
+          </div>
+        </div>
+
+        <div class="directory-card" data-category="PWD Facility">
+          <div class="directory-icon"><img src="images/wheelchair.svg" alt="" class="dir-icon"></div>
+          <div>
+            <span class="tag">PWD FACILITY</span>
+            <h3>Local PDAO Offices</h3>
+            <p>Contact your city or municipal hall for the nearest Persons with Disability Affairs Office.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Persons+with+Disability+Affairs+Office+near+me" target="_blank">Find an office near you ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="disclaimer">Directory entries are based on publicly known facilities across the Philippines. Always verify addresses, contact details, and accessibility features before visiting.</p>
+    </div>
+
+    <!-- ==================== ASSISTANCE GUIDE PAGE ==================== -->
+    <div class="page" id="guide">
+      <div class="page-banner">
+        <img src="images/book.svg" alt="" class="page-banner-icon">
+        <div>
+          <p class="eyebrow">STEP-BY-STEP HELP</p>
+          <h2>Assistance Guide</h2>
+        </div>
+      </div>
+
+      <div class="content-panel">
+        <h3>How to Apply for a PWD ID</h3>
+        <p class="intro">The following is a general guide. Contact your local Persons with Disability Affairs Office (PDAO) for the latest requirements and process.</p>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">1</span>
+            <div>
+              <h3>Prepare your documents</h3>
+              <p>Ask your local PDAO about the current application form and supporting documents required.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <div>
+              <h3>Visit your local PDAO</h3>
+              <p>Submit your application to the designated office in your city or municipality.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <div>
+              <h3>Follow the assessment process</h3>
+              <p>Follow the instructions given by the authorized personnel. Additional verification may be required.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-number">4</span>
+            <div>
+              <h3>Wait for the application update</h3>
+              <p>Ask the office about processing time and how you will be notified.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="notice">Always use official government channels for updated requirements and assistance.</div>
+      </div>
+    </div>
+
+    <!-- ==================== ANNOUNCEMENTS PAGE ==================== -->
+    <div class="page" id="announcements">
+      <div class="page-banner">
+        <img src="images/Notif.svg" alt="" class="page-banner-icon">
+        <div>
+          <p class="eyebrow">LATEST UPDATES</p>
+          <h2>Announcements</h2>
+        </div>
+      </div>
+
+      <div class="content-panel">
+        <div class="announcement-list">
+          <div class="announcement-card">
+            <span class="tag">GENERAL INFORMATION</span>
+            <h3>Check with your local PDAO for PWD services</h3>
+            <p>For application schedules, requirements, and local programs, contact the Persons with Disability Affairs Office in your city or municipality.</p>
+            <small>Posted: Sample lang po</small>
+          </div>
+          <div class="announcement-card">
+            <span class="tag">ACCESSIBILITY</span>
+            <h3>Help make public spaces more accessible</h3>
+            <p>Report accessibility concerns to the appropriate local government office or facility management.</p>
+            <small>Posted: Sample lang po</small>
+          </div>
+          <div class="announcement-card">
+            <span class="tag">WEBSITE UPDATE</span>
+            <h3>Welcome to PWD Assist</h3>
+            <p>This student project prototype brings useful information, directory links, and assistance guides together in one place.</p>
+            <small>Posted: Sample lang po</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== EMERGENCY CONTACTS PAGE ==================== -->
+    <div class="page" id="contacts">
+      <div class="page-banner">
+        <img src="images/phone.svg" alt="" class="page-banner-icon">
+        <div>
+          <p class="eyebrow">CALL FOR HELP</p>
+          <h2>Emergency Contacts</h2>
+        </div>
+      </div>
+
+      <div class="content-panel">
+        <h3>Philippine Emergency Hotlines</h3>
+        <p class="intro">Important numbers you can call during an emergency. Static list lang ito, walang database at walang internet connection na kailangan.</p>
+
+        <div class="notice">
+          <strong>Kung may nasa panganib, tumawag agad sa 911.</strong>
+          Sabihin ang lugar, kung ano ang nangyari, at kung ilan ang tao na kailangan ng tulong.
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="tag">NATIONAL</span>
+            <h3>National Emergency Hotline</h3>
+            <p>Police, fire, at medical emergency sa buong bansa.</p>
+            <a class="contact-number" href="tel:911">911</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">POLICE</span>
+            <h3>Philippine National Police (PNP)</h3>
+            <p>Pulisya at peace and order concerns.</p>
+            <a class="contact-number" href="tel:117">117</a>
+            <a class="contact-number" href="tel:+63287220650">(02) 8722-0650</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">FIRE</span>
+            <h3>Bureau of Fire Protection (BFP)</h3>
+            <p>Sunog at fire emergency.</p>
+            <a class="contact-number" href="tel:+63284260219">(02) 8426-0219</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">MEDICAL</span>
+            <h3>Philippine Red Cross</h3>
+            <p>Ambulance, first aid, at blood services.</p>
+            <a class="contact-number" href="tel:143">143</a>
+            <a class="contact-number" href="tel:+63285270000">(02) 8527-0000</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">DISASTER</span>
+            <h3>NDRRMC</h3>
+            <p>National Disaster Risk Reduction and Management Council.</p>
+            <a class="contact-number" href="tel:+63289115061">(02) 8911-5061 to 65</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">SOCIAL SERVICES</span>
+            <h3>DSWD</h3>
+            <p>Department of Social Welfare and Development.</p>
+            <a class="contact-number" href="tel:+63289318101">(02) 8931-8101 to 07</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">TRAFFIC</span>
+            <h3>MMDA</h3>
+            <p>Traffic, road emergency, at flood concerns sa Metro Manila.</p>
+            <a class="contact-number" href="tel:136">136</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">SEA</span>
+            <h3>Philippine Coast Guard (PCG)</h3>
+            <p>Emergency sa dagat at maritime rescue.</p>
+            <a class="contact-number" href="tel:+63285278481">(02) 8527-8481 to 89</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">WEATHER</span>
+            <h3>PAGASA</h3>
+            <p>Weather forecasts at typhoon updates.</p>
+            <a class="contact-number" href="tel:+63282840800">(02) 8284-0800</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="tag">EARTHQUAKE</span>
+            <h3>PHIVOLCS</h3>
+            <p>Earthquake at volcano updates.</p>
+            <a class="contact-number" href="tel:+63284261468">(02) 8426-1468 to 79</a>
+          </div>
+        </div>
+
+        <p class="disclaimer">Pwede magbago ang mga numero, kaya i-check pa rin sa official website ng ahensya. Student project lang ito.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
